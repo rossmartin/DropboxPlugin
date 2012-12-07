@@ -14,8 +14,5 @@ You will need to put your Dropbox App Key in AndroidManifest.xml @ Line 67
 
 You also need to put your Dropbox App Key and Secret in PhoneGapDropBox.java @ line 40 and 41.
 
-final static private String APP_KEY = "INSERT_APP_KEY_HERE";
-final static private String APP_SECRET = "INSERT_SECRET_HERE";
-
 
 
