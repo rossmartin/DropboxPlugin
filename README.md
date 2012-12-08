@@ -14,5 +14,7 @@ You will need to put your Dropbox App Key in AndroidManifest.xml @ Line 67
 
 You also need to put your Dropbox App Key and Secret in PhoneGapDropBox.java @ line 40 and 41.
 
+This tutorial here below can help you integrate this plugin into your own project - 
 
+http://rossmartindev.blogspot.com/2012/12/using-dropbox-sdk-with-phonegap-aka.html
 
