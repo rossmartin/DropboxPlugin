@@ -104,26 +104,7 @@ public class PhoneGapDropBox extends Plugin {
             	    inputStream = new FileInputStream(file);
             	    //Entry newEntry = mDBApi.putFile("/PocketHealth-backup.bk", inputStream, // putFile method for DropboxAPI class creates new backup files some-file.txt(1), etc.
             	            //file.length(), null, null);
-            	            
-            	            
-            	            
-/*
-
-Updated by : Ujjwal Relan  (email: ujjwal<at>seeta<dot>in)
-             Tusshar Singh (email: tusshar<at>seeta<dot>in)
-             
-                Initial Statement
-<line 107>      Entry newEntry = mDBApi.putFileOverwrite("some-file.txt", inputStream, // putFileOverwrite method overwrites IF the new file is different than the current backup on Dropbox
-            	            file.length(), null);
-            	 This statement throws DropboxException e , Something went wrong while uploading.
-            	 This issue is fixed below.
-
-Reference: http://stackoverflow.com/a/9832865
-
-*/            	            
-
-
-            	    DropboxAPI.Entry newEntry = mDBApi.putFileOverwrite("some-file.txt", inputStream, // putFileOverwrite method overwrites IF the new file is different than the current backup on Dropbox
+            	    Entry newEntry = mDBApi.putFileOverwrite("some-file.txt", inputStream, // putFileOverwrite method overwrites IF the new file is different than the current backup on Dropbox
             	            file.length(), null);
             	    Log.i("DbExampleLog", "The uploaded file's rev is: " + newEntry.rev);
             	} catch (DropboxUnlinkedException e) {
