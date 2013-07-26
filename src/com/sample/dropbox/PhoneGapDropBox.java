@@ -102,7 +102,7 @@ public class PhoneGapDropBox extends Plugin {
             	try {
             	    File file = new File("/mnt/sdcard/some-file.txt");
             	    inputStream = new FileInputStream(file);
-            	    //Entry newEntry = mDBApi.putFile("/PocketHealth-backup.bk", inputStream, // putFile method for DropboxAPI class creates new backup files some-file.txt(1), etc.
+            	    //Entry newEntry = mDBApi.putFile("/some-file.txt", inputStream, // putFile method for DropboxAPI class creates new backup files some-file.txt(1), etc.
             	            //file.length(), null, null);
             	            
             	            
@@ -165,7 +165,6 @@ Reference: http://stackoverflow.com/a/9832865
             	try {
             	    File file = new File("/mnt/sdcard/some-file.txt");
             	    outputStream = new FileOutputStream(file);
-            	    //DropboxFileInfo info = mDBApi.getFile("/PocketHealth-backup.bk", null, outputStream, null);
             	    //Log.i("DbExampleLog", "The file's rev is: " + info.getMetadata().rev);
             	    mDBApi.getFile("/some-file.txt", null, outputStream, null);
             	    // /path/to/new/file.txt now has stuff in it.
