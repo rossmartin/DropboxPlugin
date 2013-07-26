@@ -18,17 +18,3 @@ This tutorial here below can help you integrate this plugin into your own projec
 
 http://rossmartindev.blogspot.com/2012/12/using-dropbox-sdk-with-phonegap-aka.html
 
-Updated by : 
-       Ujjwal Relan (email: ujjwal@seeta.in) 
-       Tusshar Singh (email: tusshar@seeta.in)
-
-       Issue in the file src/com/sample/dropbox/PhoneGapDropBox.java 
-line 107:       Initial Statement
-       
-       Entry newEntry = mDBApi.putFileOverwrite("some-file.txt", inputStream, // putFileOverwrite method overwrites IF the new file is different than the current backup on Dropbox 
-       file.length(), null); 
-       
-       This statement throws DropboxException e , Something went wrong while uploading. This issue is fixed below.
-
-Reference: http://stackoverflow.com/a/9832865
-
