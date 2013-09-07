@@ -1,6 +1,8 @@
 PhoneGap Dropbox Plugin for Android
 ==================
 
+__Update 9/7/13 - My [Dropbox Sync Plugin](https://github.com/rossmartin/phonegap-dropbox-sync) is much better than the old one here.__
+
 This quick sample project will show you how to link your app with Dropbox using PhoneGap.  It will also show how to upload and download a file from Dropbox.
 
 I have already included the Android Dropbox SDK in this project.
